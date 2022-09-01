@@ -1,7 +1,14 @@
 <%- include("partials/header") -%>
-    
-
-
-    <!-- <img src="/images/whale.jpg" class="img-fluid dimages" alt=""> -->
-    
-<%- include("partials/footer") -%>
+  <div class="container-fluid  card-container">
+    <%for(let i=0;i<m_message.length;i++){%>
+      <div class="each-card ">
+        <h1>
+          <%= m_message[i].title %>
+        </h1>
+        <p id="txtalign">
+          <%= m_message[i].description %>
+        </p>
+      </div>
+      <%}%>
+  </div>
+  <%- include("partials/footer") -%>

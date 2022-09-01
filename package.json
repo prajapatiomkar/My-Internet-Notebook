@@ -1,4 +1,22 @@
 {
+  "name": "my-internet-notebook",
+  "version": "1.0.0",
+  "description": "Building My Internet Notebook aka Blog Website.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajapatiomkar/My-Internet-Notebook.git"
+  },
+  "author": "Prajapati omkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prajapatiomkar/My-Internet-Notebook/issues"
+  },
+  "homepage": "https://github.com/prajapatiomkar/My-Internet-Notebook#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "ejs": "^3.1.8",

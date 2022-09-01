@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+<form action="/create"method="post">
+    <h1>New Blog Post</h1>	
+    <div class="form-floating input-field">
+        <input class="form-control text-field" name="blog_title" placeholder="Leave a comment here" id="floatingTextarea"></input>
+        <label for="floatingTextarea">Title</label>
+      </div>
+    <div class="form-floating input-field">
+        <textarea class="form-control text-field" name="blog_description" style="height: 10rem" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Description</label>
+      </div>
+
+      <button type="submit" class="btn btn-lg submit-btn">Submit</button>
+
+</form>
+<%- include("partials/footer") -%>

@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
-   font-family: 'Poppins', sans-serif;
 
+* {
+   font-family: 'Poppins', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
+
+/* Header  */
+.createBtn{
+   border-radius: 0.2rem;
+   width: 5.8rem;
+}
+.navCollapse{
+   padding: 0;
+   margin: 0;
+}
+
+
 .navbar-toggler {
    color: white;
    border: 0;
@@ -11,9 +26,55 @@
 .brand-name {
    padding: 0;
 }
-.dimages{
+
+.dimages {
    height: 30rem;
 }
+
 body {
    margin: 0 3rem;
+}
+
+/* Create  */
+form{
+   margin: 3rem 0;
+}
+form h1 {
+   color: #b0b0b0;
+}
+.input-field{
+   margin: 2rem 0 1rem;
+}
+.text-field{
+
+}
+.submit-btn{
+   border: 1px solid grey;
+   border-radius: 0.2rem;
+   box-shadow: 0;
+}
+.submit-btn:hover{
+   box-shadow: 2px 2px 1px rgb(100, 100, 100);
+   
+}
+
+
+/* Home  */
+
+.card-container{
+   margin: 3rem 0;
+   padding: 0;
+ 
+}
+
+#txtalign{
+   text-align: justify;
+}
+
+.each-card{
+   border-bottom: 1px solid #b0b0b0;
+   
+   width: 100%;
+   margin-bottom: 2rem;
+   padding: 2rem 0;
 }
