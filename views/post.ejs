@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+  <div class="post-each-card">
+    <div class="upper-portion up">
+      <h1>
+        <%= m_message.Title %>
+      </h1>
+      <p>
+        <%= m_message.Date %>
+      </p>
+    </div>
+
+    <div class="post-content">
+      <img src=<%=m_message.ImageLink%> class="post-picture" alt="">
+      <p>
+        <%= m_message.Description %>
+      </p>
+    </div>
+
+  </div>
+
+
+
+  <%- include("partials/footer") -%>

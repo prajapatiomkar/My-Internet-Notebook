@@ -4,21 +4,18 @@
       <div class="each-card">
         <div class="upper-portion">
           <h1>
-            <%= m_message[i].title %>
+            <%= m_message[i].Title %>
           </h1>
           <p>
-            <%= dAndT %>
+            <%= m_message[i].Date %>
           </p>
         </div>
         <div class="bottom-portion">
           <p id="txtalign">
-            <%= m_message[i].description.substring(0,100)+"..." %><a href="/posts/<%=  m_message[i].title %>">Read more</a>
+            <%= m_message[i].Description.substring(0,100)+"..." %><a href="/posts/<%= m_message[i]._id %>">Read more</a>
           </p>
-          <img src="/images/whale.jpg" class="pictures" alt="">
+          <img src=<%=m_message[i].ImageLink%> class="pictures" alt="">
         </div>
-        
-       
-       
       </div>
       <%}%>
   </div>
