@@ -32,7 +32,7 @@
 }
 
 body {
-   margin: 0 3rem;
+   margin: 0 5rem;
 }
 
 /* Create  */
@@ -69,12 +69,40 @@ form h1 {
 
 #txtalign{
    text-align: justify;
+   width: 600px;
 }
 
 .each-card{
    border-bottom: 1px solid #b0b0b0;
-   
    width: 100%;
    margin-bottom: 2rem;
    padding: 2rem 0;
 }
+
+.upper-portion{
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+}
+.pictures{
+   height: 134px;
+   width: 200px;
+}
+
+.bottom-portion{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+@media screen and (max-width: 780px) {
+   body {
+    
+     margin: 0 2rem;
+   }
+   #txtalign{
+      margin-right: 12px;
+   }
+
+ }

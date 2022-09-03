@@ -1,13 +1,24 @@
 <%- include("partials/header") -%>
   <div class="container-fluid  card-container">
     <%for(let i=0;i<m_message.length;i++){%>
-      <div class="each-card ">
-        <h1>
-          <%= m_message[i].title %>
-        </h1>
-        <p id="txtalign">
-          <%= m_message[i].description %>
-        </p>
+      <div class="each-card">
+        <div class="upper-portion">
+          <h1>
+            <%= m_message[i].title %>
+          </h1>
+          <p>
+            <%= dAndT %>
+          </p>
+        </div>
+        <div class="bottom-portion">
+          <p id="txtalign">
+            <%= m_message[i].description.substring(0,100)+"..." %><a href="/posts/<%=  m_message[i].title %>">Read more</a>
+          </p>
+          <img src="/images/whale.jpg" class="pictures" alt="">
+        </div>
+        
+       
+       
       </div>
       <%}%>
   </div>
