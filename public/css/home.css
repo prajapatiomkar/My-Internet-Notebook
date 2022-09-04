@@ -17,6 +17,9 @@
    padding: 0;
    margin: 0;
 }
+.nbar{
+   background-color: white;
+}
 
 
 .navbar-toggler {
@@ -80,13 +83,17 @@ form h1 {
    border-bottom: 1px solid #b0b0b0;
    width: 100%;
    margin-bottom: 2rem;
-   padding: 2rem 0;
+  
 }
 
 .upper-portion {
+   padding-top: 2rem;
    display: flex;
    align-items: baseline;
    justify-content: space-between;
+}
+.upper-portion h1{
+   width: 60rem;
 }
 
 .pictures {
@@ -105,16 +112,22 @@ form h1 {
 /* post  */
 .post-content {
    text-align: center;
+   margin: 2rem 0 ;
 }
 
 .up {
+   display: block;
    align-items: center;
+}
+
+.up h1 {
+   width: auto;
 }
 
 .post-picture {
    margin: 1rem 0;
    height: auto;
-   width: 300px;
+   width: 400px;
    aspect-ratio: auto 112 / 112;
    object-fit: cover;
 }
@@ -122,6 +135,7 @@ form h1 {
 .post-content p {
    text-align: justify;
 }
+
 
 @media screen and (max-width: 780px) {
    body {
@@ -139,6 +153,22 @@ form h1 {
       height: 70px;
    }
 
+   .post-picture {
+      margin: 1rem 0;
+      height: auto;
+      width: 270px;
+      aspect-ratio: auto 112 / 112;
+      object-fit: cover;
+   }
+
+   .upper-portion h1{
+     width: 70%;
+     font-size: 1rem;
+   }
+
+   .up h1{
+      width: auto;
+   }
 
 
 }
